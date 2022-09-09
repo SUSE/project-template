@@ -28,7 +28,7 @@ export const PROJECT_CONFIGURATION = {
     ]
   },
   projectVideo: {
-    isEnable: true,
+    isEnable: false,
     youtubeUrl: 'https://www.youtube.com/watch?v=6pYrg92TOWo'
   },
   projectCta: {
@@ -66,10 +66,23 @@ export const PROJECT_CONFIGURATION = {
   },
   // ℹ️ No more than 3 items for a better structure.
   projectGetStarted: [
-    'git clone git@github.com:project/project-name',
-    'cd project-name',
-    './tools/setup-dev.sh',
-    'source tools/venv/bin/activate'
+    {
+      title: 'Download Rancher Desktop',
+      action: {
+        isEnable: true,
+        title: 'Install Rancher Desktop',
+        url: '#'
+      }
+    },
+    {
+      title: 'Run The App',
+      description: 'Run the app you downloaded and it will take care of the rest.',
+      action: {
+        isEnable: false,
+        title: '',
+        url: ''
+      }
+    }
   ],
   projectFAQ: {
     isEnabled: true,
@@ -140,6 +153,6 @@ export const PROJECT_CONFIGURATION = {
     {
       title: 'Feedback',
       href: 'http://www.google.com',
-    }
+    },
   ]
 }
