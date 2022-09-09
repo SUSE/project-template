@@ -6,15 +6,9 @@ module.exports = {
     extend: {
       colors: {
         // Configure your color palette here
-        primary: '#ffff33',
-        'primary-light': '#113636',
-
-        'secondary-dark': '#0C0D0D',
+        primary: '#FF7C3F',
+        'secondary-dark': '#0C322C',
         'secondary-light': '#30BA78',
-        'secondary-lighter': '#AFEACD',
-        'suse-blue': '#2251F5',
-        'suse-gray': '#f7f7f7',
-        customDark: `#1d1f1f`,
       },
     },
     fontFamily: {
